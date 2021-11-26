@@ -30,5 +30,6 @@ func NewServer() (*server, error) {
 	srv := server{
 		router: mux.NewRouter(),
 	}
+	srv.routes()
 	return &srv, nil
 }
